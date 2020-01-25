@@ -1,4 +1,4 @@
-
+![DUMB Logo](dumb.svg)
 
 This is a very simple architecture (and executable format) made for the purpose of teaching how to write Binja loaders and architectures.
 
