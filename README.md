@@ -2,6 +2,8 @@
 
 This is a very simple architecture (and executable format) made for the purpose of teaching how to write Binja loaders and architectures.
 
+My hope for this repo is that it can be a simple teaching resource for this topic. PRs welcome!
+
 An example "firmware image" is included [here](test.bin)
 
 # DUMB Architecture
