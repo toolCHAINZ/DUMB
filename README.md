@@ -33,7 +33,7 @@ Following is a description of the architecture. In this document, we use the fol
 | Format               |  Tokenization          |   Meaning                                                                        |
 | -------------------- | ---------------------- | -------------------------------------------------------------------------------- |
 | `a0 XX XX XX XX`     | `call XXXXXXXXX`       | Push `addr + 5` onto the stack and transfer execution to `XXXXXXXX` (`le` dword) |
-| `7:xxyy XX XX XX XX` | `jlt dd, ss, XXXXXXXX` | If `rx` is less than `rx`, jump to `XXXXXXXX`, otherwise continue to next instr  |
+| `7:xxyy XX XX XX XX` | `jlt xx, yy, XXXXXXXX` | If `rx` is less than `rx`, jump to `XXXXXXXX`, otherwise continue to next instr  |
 | `8:__rr XX XX XX XX` | `mov rr, XXXXXXXX`     | Move the immediate `XXXXXXXX` into `rr`                                          |
 
 # DUMB Format
