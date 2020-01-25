@@ -2,6 +2,8 @@
 
 This is a very simple architecture (and executable format) made for the purpose of teaching how to write Binja loaders and architectures.
 
+An example "firmware image" is included [here](test.bin)
+
 # DUMB Architecture
 
 Following is a description of the architecture. In this document, we use the following format to specify bitfields:
