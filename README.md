@@ -2,7 +2,7 @@
 
 This is a very simple architecture (and executable format) made for the purpose of teaching how to write Binja loaders and architectures.
 
-My hope for this repo is that it can be a simple teaching resource for this topic. PRs welcome!
+My hope for this repo is that it can be a simple teaching resource for this topic. While it covers the basics, it leaves some important topics (like flags) uncovered. PRs welcome!
 
 An example "firmware image" is included [here](test.bin)
 
@@ -12,7 +12,7 @@ Following is a description of the architecture. In this document, we use the fol
 
 `0:xxyy` represents a single byte: `0` means that the first (upper) nibble of the byte is zero, while `xxyy` indicates two 2-bit fields making up the lower nibble of the byte.
 
-## Registery
+## Registers
 
 * `sp` (stack pointer)
 * `r0` (GPR)
@@ -48,5 +48,5 @@ DUMB files are extremely simple, containing only magic, and metadata for a singl
 | ------ | ------ | ------------------------ | ---------------------------------------------              |
 | 0      | 4      | "`DUMB`"                 | Magic                                                      |
 | 4      | 4      |          N/A             | Section length stored as little endian dword               |
-| 8      | 4      |            N/A           | Address to load section at, stored as little endian dworx  |
+| 8      | 4      |            N/A           | Address to load section at, stored as little endian dword  |
 
